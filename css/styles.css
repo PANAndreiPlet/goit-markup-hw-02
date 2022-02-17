@@ -6,6 +6,12 @@ body {
 /* Основной цвет текста #757575 */
 /* Акцент #2196F3 */
 
+:root {
+  --primary-text-color: #757575;
+  --title-text-color: #212121;
+  --accent-color: #2196f3;
+  --primary-white-color: ;
+}
 /* logo */
 .logo {
   font-family: Raleway, sans-serif;
@@ -14,10 +20,11 @@ body {
   line-height: 1.2;
 }
 
-.main-nav {
+.site-nav .link {
   font-family: Roboto;
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.1;
+  color: var(--title-text-color);
 }
