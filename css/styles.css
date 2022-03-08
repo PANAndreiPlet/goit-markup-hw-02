@@ -1,6 +1,7 @@
 body {
   background-color: #ffffff;
   font-family: Roboto, sans-serif;
+  color: #757575;
 }
 
 /* Основной цвет текста #757575 */
@@ -10,16 +11,28 @@ body {
   --primary-text-color: #757575;
   --title-text-color: #212121;
   --accent-color: #2196f3;
-  --primary-white-color: ;
+  --primary-white-color: #ffffff;
+  --secondary-background-color: #f5f4fa;
 }
-/* logo */
+
+ul {
+  list-style-type: none;
+}
+/* Логотип */
 .logo {
   font-family: Raleway, sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.2;
+  color: #000;
+  text-decoration: none;
 }
 
+.logo-accent {
+  color: var(--accent-color);
+}
+
+/* Навигация сайта */
 .site-nav .link {
   font-family: Roboto;
   font-style: normal;
@@ -27,4 +40,65 @@ body {
   font-size: 14px;
   line-height: 1.1;
   color: var(--title-text-color);
+  text-decoration: none;
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--accent-color);
+}
+
+.contacts-header .link {
+  color: var(--primary-text-color);
+  text-decoration: none;
+}
+
+.contacts-header .link:hover,
+.contacts-header .link:focus {
+  color: var(--accent-color);
+}
+
+.site-nav .link.current {
+  color: var(--accent-color);
+}
+
+/*Герой*/
+
+/* Основные секции */
+
+.section .section-title {
+  color: var(--title-text-color);
+}
+
+/*Наши особенности*/
+.feature-list .title {
+  color: var(--title-text-color);
+}
+
+/*Наша команда*/
+.team-list .name {
+  color: var(--title-text-color);
+}
+
+/* Страница Портфолио */
+
+/* Фильтры */
+.filters-button {
+  color: var(--title-text-color);
+  background-color: var(--secondary-background-color);
+}
+.filters-button:hover,
+.filters-button:focus,
+.filters-button.current {
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
+}
+
+/* Примеры работ */
+.projects-title {
+  color: var(--title-text-color);
+}
+
+.projects-desc {
+  color: var(--primary-text-color);
 }
