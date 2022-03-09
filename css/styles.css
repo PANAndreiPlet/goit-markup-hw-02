@@ -102,3 +102,15 @@ ul {
 .projects-desc {
   color: var(--primary-text-color);
 }
+
+/* Футер */
+.footer {
+  background-color: #2f303a;
+}
+
+.contacts-header .link-adress {
+  color: var(--primary-white-color);
+}
+.contacts-header .link-contacts {
+  color: rgba(255, 255, 255, 0.6);
+}
